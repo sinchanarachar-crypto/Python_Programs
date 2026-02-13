@@ -1,0 +1,7 @@
+print("Enter the string: ")
+text=input()
+print("Enter a word to delete: ")
+word=input()
+text=text.replace(word,"")
+print()
+print(text)
