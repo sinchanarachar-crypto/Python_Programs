@@ -108,7 +108,7 @@ class ChessApp:
         elif self.board[row][col] != "" and self.is_correct_turn(row,col):
             self.reset_highlights()
             self.selected_piece = (row,col)
-            self.buttons[row][col].config(bg="#FFD700")
+            self.buttons[row][col].config(bg="#DDD8BD")
             self.highlight_moves(row,col)
 
     def reset_highlights(self):
@@ -150,7 +150,7 @@ class ChessApp:
                         if saved_dst != "":
                             self.buttons[r][c].config(bg="#FFB6C1")
                         else:
-                            self.buttons[r][c].config(bg="#90EE90")
+                            self.buttons[r][c].config(bg="#AEE6AE")
 
     def update_board(self):
         for row in range(BOARD_SIZE):
